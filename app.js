@@ -4,6 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
+    console.log("Hello World");
     res.status(200).send({key: "Its a demo response"});
 });
 
